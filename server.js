@@ -1,10 +1,9 @@
-// node web server zu definieren
+// node web server
 
 import { createServer } from 'node:http';
 
 export const server = createServer((request, response) => {
-  // .. write reponse
-  // ...
+  // .. write responses
 
   if (request.url === '/hello') {
     response.statusCode = 200; // o.k.
